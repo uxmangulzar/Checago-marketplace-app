@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_10sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/_10sdp">
+<RelativeLayout
+    android:id="@+id/rl_news1"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_170sdp"
+
+    >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:textSize="@dimen/_13ssp"
+        android:text="Chichago Defender"
+        android:paddingStart="@dimen/_20sdp"
+        android:textColor="@color/black"
+        android:gravity="center|start"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginStart="-10dp"
+        android:layout_marginEnd="-10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/white_background"/>
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

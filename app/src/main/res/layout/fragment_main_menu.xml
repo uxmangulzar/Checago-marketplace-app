@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Acitivity.Home.MainMenuFragment">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_height="@dimen/_60sdp"
+        app:cardBackgroundColor="@color/white"
+
+        app:cardCornerRadius="@dimen/_28sdp">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_60sdp"
+        android:orientation="horizontal"
+        android:weightSum="4.5">
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.2"/>
+
+        <TextView
+            android:id="@+id/to"
+            android:layout_width="0dp"
+            android:layout_weight="1.2"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_height="match_parent"
+            android:textSize="@dimen/_12ssp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:text="Shipping\nAddress:"></TextView>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="0dp"
+            android:layout_weight="3.0"
+            android:layout_height="match_parent"
+            android:text="Loading.."
+            android:textSize="@dimen/_8ssp"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center|start"
+            />
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/black"
+            app:cardCornerRadius="@dimen/_8sdp"
+            android:layout_margin="@dimen/_12sdp"
+            android:fitsSystemWindows="true"
+            >
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_150sdp"
+                android:fitsSystemWindows="true"
+                android:layout_margin="-5dp" />
+        </androidx.cardview.widget.CardView>
+
+        <ScrollView
+            android:layout_below="@+id/c"
+            android:id="@+id/d"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <RelativeLayout
+                android:layout_below="@+id/d"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl"
+                    android:layout_marginTop="-10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvfood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_12sdp"
+                        android:layout_marginTop="@dimen/_10sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="Retails Near Me:"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end">
+
+                        <TextView
+                            android:fontFamily="@font/poppins_bold"
+                            android:id="@+id/tv_seeMoreShopNear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_7sdp"
+                            android:layout_marginEnd="@dimen/_10sdp"
+                            android:gravity="end"
+
+                            android:padding="@dimen/_3sdp"
+                            android:text="View All"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_coffeeNearYou"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvfood"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_marginTop="-10dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tvsouvenir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Services:"
+                    android:layout_marginTop="-5dp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13ssp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl"
+                    android:gravity="end">
+
+                    <TextView
+                        android:id="@+id/seeMoreSouvenirs"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:gravity="end"
+                        android:fontFamily="@font/poppins_bold"
+                        android:textColor="@color/black"
+                        android:padding="@dimen/_3sdp"
+                        android:layout_marginTop="-5dp"
+                        android:text="View All"
+                        android:textSize="@dimen/_10ssp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/rl2">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_souvenir"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/_10sdp"
+                        android:layout_marginTop="-15dp"/>
+                </RelativeLayout>
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl3"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="Community News:"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="-5dp"
+                    android:textSize="@dimen/_13ssp" />
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/rl4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl3"
+                    android:gravity="end">
+
+                    <TextView
+                        android:id="@+id/seeMoreNews"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="end"
+                        android:padding="@dimen/_3sdp"
+                        android:text="View All"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp" />
+
+                </RelativeLayout>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:visibility="gone"
+                    android:layout_below="@+id/rl4"
+                    android:id="@+id/recycler_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"/>
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+    <!--<LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Acitivity.MainMenuActivity"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp"
+        android:visibility="gone"
+        android:background="@color/spalshBackgroundColor">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:id="@+id/rl_shopnow"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shopnow"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:textSize="@dimen/_13ssp"
+                        android:text="Shop Now"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:background="@color/yellow"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rllayout_giftshop"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/giftshop"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:textSize="@dimen/_13ssp"
+                        android:text="Gift Shop"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:background="@color/yellow"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_whatgoing"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/beverage"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:textSize="@dimen/_13ssp"
+                        android:text="Beverages"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:background="@color/yellow"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:id="@+id/rl_newsfeed"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_200sdp"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/dail_news"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:textSize="@dimen/_13ssp"
+                        android:text="News Feed"
+                        android:gravity="start"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:textColor="@color/black"
+                        android:background="@color/yellow"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>-->
+
+
+</LinearLayout>

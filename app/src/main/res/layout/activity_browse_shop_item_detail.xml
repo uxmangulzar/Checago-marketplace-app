@@ -1,0 +1,455 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:id="@+id/d"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:background="@color/white"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/img_back"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="Customize Order"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp" />
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:clipToPadding="false"
+            android:focusable="true">
+            <ImageView
+                android:id="@+id/img_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:src="@drawable/ic_shopping_cart"/>
+            <TextView
+                android:background="@drawable/badge_background"
+                android:id="@+id/cart_badge"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="right|end|top"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:padding="3dp"
+                android:textColor="@android:color/white"
+                android:text="10"
+                />
+        </FrameLayout>
+
+    </RelativeLayout>
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="0.5dp"
+         android:background="@color/black"
+         android:layout_below="@+id/d"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/d">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_stockInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="This Item Is Currently In Stock"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ln"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_stockInfo"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal"
+                android:padding="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                app:cardCornerRadius="@dimen/_7sdp"
+                app:cardElevation="@dimen/_5sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/img_browse_shop_itemss"
+                        android:layout_width="@dimen/_70sdp"
+                        android:layout_height="@dimen/_60sdp"
+                        android:layout_marginStart="-2dp"
+                        android:layout_marginBottom="-1dp"
+                        android:fitsSystemWindows="true"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/cup1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_coffee_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:paddingStart="@dimen/_3sdp"
+                            android:text="Black Coffee"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/_12ssp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/tv_coffee_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins_bold"
+                                android:paddingStart="@dimen/_3sdp"
+                                android:text="$ 45"
+                                android:textSize="@dimen/_14ssp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:layout_marginEnd="@dimen/_10sdp"
+                                android:gravity="end"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:id="@+id/decrease"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:backgroundTint="@color/yellow"
+                                    android:src="@drawable/ic_minus"
+                                    android:textSize="@dimen/_13ssp" />
+
+                                <TextView
+                                    android:id="@+id/integer_number"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="-2dp"
+                                    android:layout_marginEnd="@dimen/_10sdp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="1"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/_13ssp" />
+
+                                <ImageView
+                                    android:id="@+id/increase"
+                                    android:layout_width="@dimen/_15sdp"
+                                    android:layout_height="@dimen/_15sdp"
+                                    android:backgroundTint="@color/yellow"
+                                    android:onClick="increaseInteger"
+                                    android:src="@drawable/ic_plus"
+                                    android:text="+"
+                                    android:textSize="@dimen/_13ssp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/ddd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ln"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="DESCRIPTION:"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tv_description_mug"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ddd"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:fontFamily="@font/poppins_regular"
+                android:text="You will love drinking from this caramic coffee mug. It is made of 100% caramic and is made in US. Every day should feel this smooth.Estimated time is 3-8 business days."
+                android:textAlignment="textStart"
+                android:textColor="@color/black" />
+            <!--  <TextView
+                  android:id="@+id/t"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/tv_description_mug"
+                  android:text="Please select the size"
+                  android:gravity="left"
+                  android:textSize="@dimen/_13ssp"
+                  android:layout_marginTop="@dimen/_10sdp"
+                  android:layout_marginStart="@dimen/_16sdp"
+                  android:textColor="@color/black"/>
+              <RadioGroup
+                  android:id="@+id/radioGroup1"
+                  android:layout_marginStart="@dimen/_20sdp"
+                  android:layout_below="@+id/t"
+                  android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <RadioButton android:id="@+id/radio_button_small"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="Small"
+                      android:textSize="@dimen/_12ssp"
+                      android:buttonTint="@color/black"
+                      android:checked="true"
+                      android:theme="@style/color_checked_box"
+                      />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="12$"
+                      android:textSize="@dimen/_12ssp"
+                      android:textColor="@color/black"
+                      android:layout_marginStart="@dimen/_8sdp"
+                      android:fontFamily="@font/montserrat_regular"/>
+              </RadioGroup>
+              <RadioGroup
+                  android:id="@+id/radioGroup2"
+                  android:layout_marginStart="@dimen/_20sdp"
+                  android:layout_below="@+id/radioGroup1"
+                  android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <RadioButton android:id="@+id/radio_button_medium"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:buttonTint="@color/black"
+                      android:textSize="@dimen/_12ssp"
+                      android:text="Medium"
+                      />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="12$"
+                      android:textSize="@dimen/_12ssp"
+                      android:textColor="@color/black"
+                      android:layout_marginStart="@dimen/_8sdp"
+                      android:fontFamily="@font/montserrat_regular"/>
+              </RadioGroup>
+              <RadioGroup
+                  android:id="@+id/radioGroup3"
+                  android:layout_marginStart="@dimen/_20sdp"
+                  android:layout_below="@+id/radioGroup2"
+                  android:orientation="horizontal"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content">
+                  <RadioButton
+                      android:id="@+id/radio_button_large"
+                      android:layout_width="wrap_content"
+                      android:textSize="@dimen/_12ssp"
+                      android:buttonTint="@color/black"
+                      android:layout_height="wrap_content"
+                      android:text="Large"
+                      />
+                  <TextView
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:text="12$"
+                      android:textSize="@dimen/_12ssp"
+                      android:textColor="@color/black"
+                      android:layout_marginStart="@dimen/_8sdp"
+                      android:fontFamily="@font/montserrat_regular"/>
+              </RadioGroup>-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_description_mug"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                 />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/recycler_size"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                app:cardCornerRadius="@dimen/_7sdp"
+                app:cardElevation="@dimen/_7sdp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_customizeCheck"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:paddingBottom="@dimen/_10sdp"
+                     />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/tvorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Order Time:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_toEndOf="@+id/tvorder"
+                android:gravity="end"
+                android:text="5-7 Mint"
+                android:textColor="@color/textcolor" />
+
+            <TextView
+                android:id="@+id/tvorder1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvorder"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Estimated Travel Time:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvorder"
+                android:layout_marginStart="@dimen/_32sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:layout_toEndOf="@+id/tvorder"
+                android:gravity="end"
+                android:text="10-12 Mint"
+                android:textColor="@color/textcolor" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvorder1"
+
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="SUGGESTED ITEM:"
+                        android:textColor="@color/textcolor"
+                        android:textSize="@dimen/_12ssp" />
+
+                    <TextView
+                        android:id="@+id/tv_viewAll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_20sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="View all"
+                        android:gravity="end"
+                        android:layout_marginEnd="@dimen/_20sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_11ssp" />
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rl_suggested_item_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_50sdp"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp" />
+            </LinearLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_getStarted"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:text="Add to Cart"
+                android:textColor="@color/white"
+                android:padding="@dimen/_8sdp"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.ButtonRounded"
+                android:backgroundTint="@color/yellow"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:textAllCaps="false"
+                android:layout_gravity="bottom"
+                android:layout_alignParentBottom="true"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="@dimen/_14ssp"
+                />
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

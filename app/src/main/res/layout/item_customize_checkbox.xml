@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_flavourName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Flavour name here"
+        android:gravity="left"
+        android:textSize="@dimen/_12ssp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:id="@+id/de"
+        android:layout_below="@+id/tv_flavourName"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/reycler_checkbox"/>
+       <!-- <CheckBox android:id="@+id/checkbox_soy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sweet"
+            android:textSize="@dimen/_12ssp"
+            android:buttonTint="@color/black"
+            />
+        <CheckBox android:id="@+id/checkbox_almond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"
+
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Sour"
+            />-->
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/black"
+        android:layout_marginBottom="@dimen/_3sdp"
+        android:layout_below="@+id/de"/>
+</RelativeLayout>

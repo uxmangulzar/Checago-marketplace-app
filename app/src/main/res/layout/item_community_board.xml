@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:layout_marginStart="@dimen/_2sdp"
+    android:layout_marginEnd="@dimen/_2sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    app:cardElevation="@dimen/_10sdp"
+    app:cardCornerRadius="@dimen/_10sdp"
+    android:layout_marginTop="@dimen/_10sdp"
+    app:cardBackgroundColor="@color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+   <RelativeLayout
+       android:id="@+id/rl_browseshopitem"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       >
+       <LinearLayout
+           android:id="@+id/lnd"
+           android:layout_marginTop="@dimen/_5sdp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:visibility="gone"
+           android:orientation="horizontal">
+       <TextView
+           android:id="@+id/tv_shop_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Gizah Shop"
+           android:textColor="@color/black"
+           android:textSize="@dimen/_13ssp"
+           android:layout_marginStart="@dimen/_10sdp"
+
+           />
+       <LinearLayout
+           android:layout_marginStart="@dimen/_10sdp"
+           android:id="@+id/ln_rightArrow"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+
+           android:gravity="end">
+           <ImageView
+               android:layout_width="@dimen/_20sdp"
+               android:layout_height="@dimen/_20sdp"
+               android:src="@drawable/right_arrow"
+
+               android:layout_marginEnd="@dimen/_5sdp"
+
+               />
+       </LinearLayout>
+       </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lnd"
+        android:id="@+id/rl"
+        >
+       <ImageView
+           android:id="@+id/img_shopImage"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/_200sdp"
+           android:fitsSystemWindows="true"
+           android:scaleType="fitXY"
+           android:src="@drawable/coffeeshop1"/>
+        <TextView
+            android:id="@+id/tv_shop_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="24-26 miles"
+            android:background="@drawable/distance_back"
+            android:layout_alignParentEnd="true"
+            android:layout_alignBottom="@+id/img_shopImage"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:paddingStart="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="@dimen/_11ssp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:paddingTop="@dimen/_2sdp"
+            android:paddingBottom="@dimen/_2sdp"/>
+
+    </RelativeLayout>
+       <TextView
+           android:id="@+id/tv_shopName"
+           android:layout_below="@+id/rl"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Kaffeine"
+           android:layout_marginStart="@dimen/_10sdp"
+           android:layout_marginEnd="@dimen/_10sdp"
+           android:textSize="@dimen/_14ssp"
+           android:fontFamily="@font/poppins_medium"
+           android:textColor="@color/black"
+           android:layout_marginTop="@dimen/_5sdp"/>
+       <TextView
+           android:id="@+id/tv_shop_description"
+           android:layout_below="@+id/tv_shopName"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="We Provide Best Coffee Services Here According to your Taste!"
+           android:layout_marginStart="@dimen/_10sdp"
+           android:layout_marginEnd="@dimen/_10sdp"
+           android:textSize="@dimen/_11ssp"
+           android:textColor="@color/black"
+           android:layout_marginTop="@dimen/_5sdp"
+           />
+       <LinearLayout
+           android:id="@+id/ln_f"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_below="@+id/tv_shop_description"
+           android:layout_marginTop="@dimen/_10sdp"
+           android:layout_marginStart="@dimen/_10sdp"
+           android:weightSum="1"
+           android:orientation="horizontal"
+           >
+           <ImageView
+               android:layout_width="0dp"
+               android:layout_height="@dimen/_15sdp"
+               android:layout_weight="0.1"
+               android:layout_gravity="center|bottom"
+               android:src="@drawable/ic_placeholder"
+               android:text="125 Main St Chichago, IL 60610"
+               android:layout_marginBottom="@dimen/_10sdp"
+               android:textSize="@dimen/_11ssp"
+               android:textColor="@color/black"/>
+           <TextView
+               android:id="@+id/tv_shop_address"
+               android:layout_width="0dp"
+               android:layout_height="wrap_content"
+               android:layout_weight="0.9"
+               android:text="24 A Walt Street block 4A Chichago"
+               android:gravity="top|start"
+               android:layout_marginStart="@dimen/_5sdp"
+               android:textSize="@dimen/_12ssp"
+               android:textColor="@color/black"/>
+       </LinearLayout>
+
+   </RelativeLayout>
+    <LinearLayout
+        android:layout_below="@+id/rl_browseshopitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:paddingBottom="@dimen/_10sdp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rating:"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textSize="@dimen/_12ssp"
+            android:src="@drawable/ic_baseline_star_24"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/tv_ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(4.5)"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:fontFamily="@font/poppins_regular"
+            android:layout_marginStart="@dimen/_2sdp"
+            />
+        <TextView
+
+            android:id="@+id/tv_allReview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:text="All Reviews"
+            android:textColor="@color/yellow"
+            android:gravity="end"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginEnd="@dimen/_16sdp"/>
+    </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

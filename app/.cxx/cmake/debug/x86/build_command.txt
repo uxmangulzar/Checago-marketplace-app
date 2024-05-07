@@ -1,0 +1,14 @@
+Executable : /Users/macbookpro/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
+arguments : 
+-H/Users/macbookpro/Documents/androidprojects/Working/Checago coffee/04 nov 2020/Chichago Coffee Code/ChecagoCoffee/app
+-B/Users/macbookpro/Documents/androidprojects/Working/Checago coffee/04 nov 2020/Chichago Coffee Code/ChecagoCoffee/app/.cxx/cmake/debug/x86
+-DANDROID_ABI=x86
+-DANDROID_PLATFORM=android-21
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/macbookpro/Documents/androidprojects/Working/Checago coffee/04 nov 2020/Chichago Coffee Code/ChecagoCoffee/app/build/intermediates/cmake/debug/obj/x86
+-DCMAKE_BUILD_TYPE=Debug
+-DANDROID_NDK=/Users/macbookpro/Library/Android/sdk/ndk/21.0.6113669
+-DCMAKE_TOOLCHAIN_FILE=/Users/macbookpro/Library/Android/sdk/ndk/21.0.6113669/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/macbookpro/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
+-GAndroid Gradle - Ninja
+jvmArgs : 
+
